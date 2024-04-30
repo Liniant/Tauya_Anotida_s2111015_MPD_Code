@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E335A"
+    tools:context=".Dashboards2"
+
+    >
+
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+            -->
+        <TableLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <Button
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/material_motion_duration_short_2"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="Back"
+
+                   />
+            </TableRow>
+            <!-- Spinner Starts Here -->
+            <TableRow android:padding="5dip">
+                <Spinner
+                    android:id="@+id/spinnerLocations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="8dp"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#FFFFFF"
+                    style="@android:style/Widget.Holo.Light.Button"
+
+
+                    />
+            </TableRow>
+            <!-- Spinner Ends Here -->
+            <TableRow>
+                <TextView
+                    android:id="@+id/tvImageTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Image Title"
+                    android:textSize="15sp"
+                    android:textColor="#FFFFFF"
+
+                    />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/tvdailyTheme"
+                android:layout_width="329dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#2196F3"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:padding="16dp"
+                android:shadowColor="#000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                android:text="Latest Weather Report"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!--- Latest Items Starts Here-->
+
+            <!--- Latest Items Image Starts Here-->
+            <TableRow>
+                <ImageView
+                    android:id="@+id/ivDailyImageWeather"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/cloudy"
+                    android:layout_marginEnd="8dp"
+                    />
+            </TableRow>
+            <!--- Latest Items Image Ends Here-->
+
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tvDailyTitle"
+                    android:layout_width="392dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Image Title"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/tvDailyDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+
+                    android:gravity="center"
+                    android:text="Image Title"
+                    android:textSize="15sp"
+                    android:textColor="#FFFFFF"
+
+                    />
+
+
+
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/btnViewDashBoard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_launcher_background"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="#ff0000"
+                    android:text="View DashBoards" />
+            </TableRow>
+            <!--- Latest Items Ends Here-->
+
+
+            <TextView
+                android:id="@+id/tv3dailyTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Previous 3 Days Weather Report"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="#2196F3"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:shadowColor="#000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Day"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="25dp"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weather Description"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="25dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="Min"
+                    android:layout_marginLeft="25dp"/>
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Max"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="45dp"/>
+
+            </LinearLayout>
+            <TableRow>
+
+                <ListView
+                    android:id="@+id/lvRss"
+                    android:layout_width="409dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+
+                    />
+            </TableRow>
+
+
+        </TableLayout>
+
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

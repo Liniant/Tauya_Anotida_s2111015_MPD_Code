@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    cardview:cardCornerRadius="8dp"
+    android:layout_marginBottom="20dp"
+    cardview:cardElevation="4dp"
+    cardview:cardPreventCornerOverlap="true"
+    cardview:cardUseCompatPadding="true"
+    cardview:contentPaddingBottom="10dp"
+    >
+
+    <!-- Customize the layout of each card item as per your requirements -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:orientation="horizontal"
+                >
+                <TableLayout  android:orientation="vertical"
+                    android:layout_marginRight="50dp"
+                    >
+                    <TableRow android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/textViewName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/textViewWeatherDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp" />
+                    </TableRow>
+                    <TableRow android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewTemperature"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp" />
+                    </TableRow>
+                    <TableRow android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+
+
+                </TableLayout>
+
+             <!--   <TableRow android:layout_marginRight="100dp">
+                    <ImageView
+                        android:id="@+id/imageViewWeatherIcon"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="100dp"
+                        />
+                </TableRow> -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:id="@+id/imageViewWeatherIcon"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp" />
+
+                </LinearLayout>
+
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
